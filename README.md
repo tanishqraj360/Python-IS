@@ -1,6 +1,9 @@
 # Python-IS-Sem1
 All Python Codes for 1st Semester for VTU colleges.
 Use the codes as refernce or do try to understand the following codes.
+
+
+
 E1 - a. Develop a program to read the student details like Name, USN, and Marks in three subjects. Display 
 the student details, total marks and percentage with suitable messages. 
 b. Develop a program to read the name and year of birth of a person. Display whether the person is a 
