@@ -4,6 +4,7 @@ class student():
         self.usn=usn
         self.marks=[]
         self.subject=[]
+        self.calc=[]
 
     def sub(self):
         for i in range(3):
@@ -14,18 +15,20 @@ class student():
 
     def total(self):
         total=self.marks[0]+self.marks[1]+self.marks[2]
-    
+
     def per(self):
-        per=self.total/3
-    
+        per=(self.marks[0]+self.marks[1]+self.marks[2])/3
+        
+
     def disp(self):
         print(self.name,'USN:',self.usn,'got',self.marks,'in',self.subject)
-        print('Total marks:',self.total)
-        print('Percentage:',self.per)
+        print('Total marks:',self.total())
+        print('Percentage:',self.per())
 
 def estu():
     name=input('Enter name of student: ')
-    s1=student(name)
+    usn=input('Enter USN: ')
+    s1=student(name, usn)
     s1.sub()
     s1.disp()
     print('')
@@ -43,3 +46,5 @@ def main():
     else:
         print('Try Again. Wrong input')
         main()
+
+main()
