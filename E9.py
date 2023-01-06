@@ -1,15 +1,17 @@
-class ComplexNo:
-   def __init__(self, real, imag):
-      self.re = real
-      self.im = imag
+class Complex():
+    def __init__(self, a, b):
+        self.a=a
+        self.b=b
+    
+    def add(self):
+        print(self.a+self.b)
 
-   def __add__(self, o):
-      return Complex(self.re+o.re, self.im+o.im)
-
-
-def solve(comp1, comp2):
-   print(comp1 + comp2)
-
-comp1 = Complex(2, 3)
-comp2 = Complex(5, -2)
-solve(comp1, comp2)
+n=int(input('Enter number: '))
+if n>=2:
+    for i in range(n):
+        a=complex(input('Enter first complex number: '))
+        b=complex(input('Enter second complex number: '))
+        a1=Complex(a,b)
+        a1.add()
+else:
+    print('Invalid input. Enter number greater than 2')
