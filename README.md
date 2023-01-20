@@ -61,3 +61,10 @@ calculates total marks, percentage and displays the score card details. [Hint: U
 in three subjects and total marks. Use __init__() method to initialize name, USN and the lists to store 
 marks and total, Use getMarks() method to read marks into the list, and display() method to display the 
 score card details.]
+
+Projects 
+1. Guess the Number
+2. Magic 8 Ball
+3. Generating Random Quiz Files
+4. Multiclipboard
+5. Backing Up a Folder into a ZIP File
