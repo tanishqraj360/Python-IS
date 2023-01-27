@@ -8,8 +8,8 @@ response=["It is certain",
         "My reply is no",
         "My sources say no"]
 choice=input("Press 'any key' for answer or 'quit' to exit.\n Enter your question.\n")
-if choice == 'exit':
-    print('Closing Program.')
-    quit()
-else:
+while choice!='quit':
     print(response[random.randint(0,8)])
+    choice=input("Press 'any key' for answer or 'quit' to exit.\n Enter your question.\n")
+print('Closing Program.')
+quit()
